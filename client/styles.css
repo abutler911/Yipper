@@ -5,9 +5,15 @@
 }
 .title {
 	text-align: center;
+	margin-top: 20px;
 }
 
-.yip-form {
+.yip-form,
+.loading {
 	width: 50%;
 	margin: 0 auto;
+}
+
+.loading {
+	text-align: center;
 }
