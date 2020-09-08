@@ -7,7 +7,7 @@ const rateLimit = require('express-rate-limit');
 
 const app = express();
 
-const db = monk(process.env.MONGO_URI || 'localhost/yipper');
+const db = monk(process.env.MONGO_URI || 'localhost/meower');
 const yips = db.get('yips');
 const filter = new Filter();
 
