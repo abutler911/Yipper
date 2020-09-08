@@ -7,7 +7,7 @@ const rateLimit = require('express-rate-limit');
 
 const app = express();
 
-const db = monk('mongodb+srv://abutler911:abutler911@cluster0.myin7.mongodb.net/<dbname>?retryWrites=true&w=majority');
+const db = monk(process.env.MONGO_URI || 'localhost/yipper');
 const yips = db.get('yips');
 const filter = new Filter();
 
